@@ -5,22 +5,29 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 10px;
+}
+
+button {
+    margin: 20px;
 }
 
 #container {
     height:800px ;
     width: 850px;
     display: flex;
-    flex:1 1 0;
+    flex:1 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0;
 }
 
 .grid {
+    display: flex;
+    flex: 1 0 auto;
+    max-height: 800;
     background-color: white;
-    height: 50px;
-    width: 50px;
     border: 1px solid black;
     margin: 0;
     padding: 0;
