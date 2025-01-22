@@ -1,6 +1,8 @@
 const container = document.querySelector("#container");
 const button = document.querySelector(".btn");
 
+
+// creates 16 * 16 grid to start
 for (let i = 1; i <= 256; i++) {
     const grid = document.createElement("div");
 
@@ -30,6 +32,8 @@ squares.forEach((square) => {
 let gridArray = Array.from(squares);
 
 let changeSize = (size) => {
+
+    // resizes individual grids based on original size
     let newHeight = 16 / size * 50 + ""
 
     while (container.firstChild) {
