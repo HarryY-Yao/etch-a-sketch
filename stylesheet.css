@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex:0 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.grid {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border: 1px solid brown;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
