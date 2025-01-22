@@ -8,3 +8,19 @@ for (let i = 1; i <= 256; i++) {
 
     container.appendChild(grid);
 }
+
+const squares = document.querySelectorAll(".grid");
+
+squares.forEach((square) => {
+
+    square.addEventListener("mouseover", () => {
+        square.style.backgroundColor = "orange";
+    });
+
+    square.addEventListener("mouseleave", () => {
+        setTimeout(() => {
+            square.style.backgroundColor = "";
+        }, 1000);
+    });
+
+});

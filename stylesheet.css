@@ -1,23 +1,27 @@
 body {
-    height: 100vh;
-    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
 }
 
 #container {
-    height: 100vh;
+    height:800px ;
+    width: 850px;
     display: flex;
-    flex:0 0 auto;
+    flex:1 1 0;
     flex-direction: row;
     flex-wrap: wrap;
-    
 }
 
 .grid {
     background-color: white;
-    height: 100px;
-    width: 100px;
-    border: 1px solid brown;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
     margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
 }
