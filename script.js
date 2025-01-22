@@ -32,7 +32,11 @@ squares.forEach((square) => {
 let gridArray = Array.from(squares);
 
 let changeSize = (size) => {
-
+    if ( size >= 100 || size <= 0 || !(Number.isInteger(size))) {
+        alert("Invalid Size")
+        return null;
+    }
+    
     // resizes individual grids based on original size
     let newHeight = 16 / size * 50 + ""
 
