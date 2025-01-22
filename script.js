@@ -38,7 +38,8 @@ let changeSize = (size) => {
     }
     
     // resizes individual grids based on original size
-    let newHeight = 16 / size * 50 + ""
+    let newHeight = 16 / size * 50 + "";
+    let newWidth = 16 / size * 50 + "";
 
     while (container.firstChild) {
         container.removeChild(container.firstChild);
@@ -50,7 +51,7 @@ let changeSize = (size) => {
 
         grid.classList.add("grid");
         grid.id = "" + i;
-        grid.style.cssText = `height: ${newHeight}px; width: ${newHeight}px;`
+        grid.style.cssText = `height: ${newHeight}px; width: ${newWidth}px;`
 
         container.appendChild(grid);
     }
